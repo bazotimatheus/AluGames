@@ -15,7 +15,6 @@ fun main() {
         .send(request, BodyHandlers.ofString())
 
     val json = response.body()
-
     println(json)
 
 }
