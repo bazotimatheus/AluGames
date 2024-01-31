@@ -3,6 +3,7 @@ package br.com.alura.alugames.principal
 import br.com.alura.alugames.modelo.Gamer
 import br.com.alura.alugames.servicos.ConsumoApi
 import br.com.alura.alugames.modelo.Jogo
+import br.com.alura.alugames.utilitario.transformarEmIdade
 import java.util.*
 
 
@@ -10,6 +11,8 @@ fun main() {
     val leitura = Scanner(System.`in`)
     val gamer = Gamer.criarGamer(leitura)
     println(gamer)
+
+    println("Idade do gamer: " + gamer.dataNascimento?.transformarEmIdade())
 
     // loop de repetição
     do {
