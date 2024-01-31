@@ -1,6 +1,7 @@
 package org.example
 
 import com.google.gson.Gson
+import com.google.gson.JsonSyntaxException
 import java.net.URI
 import java.net.http.HttpClient
 import java.net.http.HttpRequest
@@ -46,13 +47,27 @@ fun main() {
 //    println(novoJogo)
 
     val gson = Gson()
-    val meuInfoJogo = gson.fromJson(json, InfoJogo::class.java)
+//    val meuInfoJogo = gson.fromJson(json, InfoJogo::class.java)
+//    val meuJogo = Jogo(
+//        meuInfoJogo.info.title,
+//        meuInfoJogo.info.thumb
+//    )
+//    println(meuJogo)
 
-    val meuJogo = Jogo(
-        meuInfoJogo.info.title,
-        meuInfoJogo.info.thumb
-    )
+    try {
+        val meuInfoJogo = gson.fromJson(json, InfoJogo::class.java)
+        val meuJogo = Jogo(
+            meuInfoJogo.info.title,
+            meuInfoJogo.info.thumb
+        )
 
-    println(meuJogo)
+        println(meuJogo)
+    } catch (ex: JsonSyntaxException) {
+        println("Retorno vazio. Tente outro id.")
+    } catch (ex : NullPointerException) {
+        println("Jogo inexistente. Tente outro id.")
+    }
+
+
 
 }
