@@ -1,3 +1,5 @@
+package br.com.alura.alugames.principal
+
 import br.com.alura.alugames.modelo.Gamer
 
 fun main() {
@@ -10,9 +12,7 @@ fun main() {
     gamer1.let {
         it.dataNascimento = "18/02/2000"
         it.usuario = "jacqueskywalker"
-        it.idInterno = "1234"
     }
-
 
     println(gamer1)
 }
