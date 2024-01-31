@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="164efe5f-ccd2-43e2-947f-f22da7ed3737" name="Changes" comment="Added Gson and Jogo serialized">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/InfoApiShark.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/InfoJogo.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/InfoJogo.kt" afterDir="false" />
+    <list default="true" id="164efe5f-ccd2-43e2-947f-f22da7ed3737" name="Changes" comment="Added data classes">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +131,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706707488682</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Added data classes">
+      <option name="closed" value="true" />
+      <created>1706708088708</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1706708088708</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -141,6 +149,7 @@
     <MESSAGE value="override toString in Jogo" />
     <MESSAGE value="Added constructors" />
     <MESSAGE value="Added Gson and Jogo serialized" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Gson and Jogo serialized" />
+    <MESSAGE value="Added data classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added data classes" />
   </component>
 </project>
