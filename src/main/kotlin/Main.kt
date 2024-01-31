@@ -1,12 +1,12 @@
 package org.example
 
 import com.google.gson.Gson
-import com.google.gson.JsonSyntaxException
 import java.net.URI
 import java.net.http.HttpClient
 import java.net.http.HttpRequest
 import java.net.http.HttpResponse.BodyHandlers
-import java.util.Scanner
+import java.util.*
+import kotlin.system.exitProcess
 
 
 fun main() {
@@ -54,20 +54,63 @@ fun main() {
 //    )
 //    println(meuJogo)
 
-    try {
-        val meuInfoJogo = gson.fromJson(json, InfoJogo::class.java)
-        val meuJogo = Jogo(
-            meuInfoJogo.info.title,
-            meuInfoJogo.info.thumb
-        )
+//    try {
+//        val meuInfoJogo = gson.fromJson(json, InfoJogo::class.java)
+//        val meuJogo = Jogo(
+//            meuInfoJogo.info.title,
+//            meuInfoJogo.info.thumb
+//        )
+//
+//        println(meuJogo)
+//    } catch (ex: JsonSyntaxException) {
+//        println("Retorno vazio. Tente outro id.")
+//    } catch (ex : NullPointerException) {
+//        println("Jogo inexistente. Tente outro id.")
+//    }
 
-        println(meuJogo)
-    } catch (ex: JsonSyntaxException) {
-        println("Retorno vazio. Tente outro id.")
-    } catch (ex : NullPointerException) {
+    var meuInfoJogo:InfoJogo? = null
+
+    val resultadoIJ = runCatching {
+        meuInfoJogo = gson.fromJson(json, InfoJogo::class.java)
+    }
+
+    resultadoIJ.onFailure {
+        println("Id informado inexistente. Tente outro Id.")
+        exitProcess(1)
+    }
+
+    var meuJogo:Jogo? = null
+
+    val resultado = runCatching {
+        meuJogo = Jogo(
+            meuInfoJogo!!.info.title,
+            meuInfoJogo!!.info.thumb
+        )
+    }
+
+    resultado.onFailure {
         println("Jogo inexistente. Tente outro id.")
     }
 
+    resultado.onSuccess {
+        println("Deseja inserir uma descrição personalizada? S/N")
+        val opcao = leitura.nextLine()
+
+        if (opcao.equals("s", true)) {
+            println("Insira a descrição personalizada para o jogo: ")
+            val descricaoPersonalizada = leitura.nextLine()
+
+            meuJogo?.descricao = descricaoPersonalizada
+        } else {
+            meuJogo?.descricao = meuJogo?.titulo
+        }
+
+        println(meuJogo)
+    }
+
+    resultado.onSuccess {
+        println("Busca finalizada com sucesso!")
+    }
 
 
 }

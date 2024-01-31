@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="164efe5f-ccd2-43e2-947f-f22da7ed3737" name="Changes" comment="Added scanner">
+    <list default="true" id="164efe5f-ccd2-43e2-947f-f22da7ed3737" name="Changes" comment="dealing with exceptions">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Jogo.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Jogo.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,7 +40,7 @@
     </option>
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
   "customColor": "",
@@ -59,6 +60,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "settings.editor.selected.configurable": "settings.qodana"
   }
@@ -151,8 +153,27 @@
       <option name="project" value="LOCAL" />
       <updated>1706708875260</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="dealing with exceptions">
+      <option name="closed" value="true" />
+      <created>1706710258840</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1706710258840</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
@@ -163,6 +184,7 @@
     <MESSAGE value="Added Gson and Jogo serialized" />
     <MESSAGE value="Added data classes" />
     <MESSAGE value="Added scanner" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added scanner" />
+    <MESSAGE value="dealing with exceptions" />
+    <option name="LAST_COMMIT_MESSAGE" value="dealing with exceptions" />
   </component>
 </project>
