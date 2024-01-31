@@ -17,16 +17,23 @@ fun main() {
     val json = response.body()
 //    println(json)
 
+//    meuJogo.titulo = "Batman: Arkham Asylum Game of the Year Edition"
+//    meuJogo.capa = "https:\\\\/\\\\/cdn.cloudflare.steamstatic.com\\\\/steam\\\\/apps\\\\/35140\\\\/capsule_sm_120.jpg?t=1681938587"
+//    meuJogo.descricao = "Jogo do Batman"
+
+//    println(meuJogo)
+
     val meuJogo = Jogo(
         "Batman: Arkham Asylum Game of the Year Edition",
         "https:\\\\/\\\\/cdn.cloudflare.steamstatic.com\\\\/steam\\\\/apps\\\\/35140\\\\/capsule_sm_120.jpg?t=1681938587"
     )
 
-//    meuJogo.titulo = "Batman: Arkham Asylum Game of the Year Edition"
-//    meuJogo.capa = "https:\\\\/\\\\/cdn.cloudflare.steamstatic.com\\\\/steam\\\\/apps\\\\/35140\\\\/capsule_sm_120.jpg?t=1681938587"
-//    meuJogo.descricao = "Jogo do Batman"
-
     println(meuJogo)
 
+    val novoJogo = Jogo (
+        capa = "https:\\\\/\\\\/cdn.cloudflare.steamstatic.com\\\\/steam\\\\/apps\\\\/35140\\\\/capsule_sm_120.jpg?t=1681938587",
+        titulo = "Batman: Arkham Asylum Game of the Year Edition"
+    )
 
+    println(novoJogo)
 }
