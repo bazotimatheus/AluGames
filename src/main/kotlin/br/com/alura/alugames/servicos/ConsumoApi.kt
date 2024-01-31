@@ -1,7 +1,7 @@
 package br.com.alura.alugames.servicos
 
 import com.google.gson.Gson
-import org.example.br.com.alura.alugames.modelo.InfoJogo
+import br.com.alura.alugames.modelo.InfoJogo
 import java.net.URI
 import java.net.http.HttpClient
 import java.net.http.HttpRequest
@@ -31,7 +31,7 @@ class ConsumoApi {
 
         resultadoIJ.onFailure {
             println("Id informado inexistente. Tente outro Id.")
-            exitProcess(1)
+            return null
         }
 
         return meuInfoJogo
