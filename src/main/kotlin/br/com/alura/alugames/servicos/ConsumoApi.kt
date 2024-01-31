@@ -1,12 +1,11 @@
 package br.com.alura.alugames.servicos
 
-import com.google.gson.Gson
 import br.com.alura.alugames.modelo.InfoJogo
+import com.google.gson.Gson
 import java.net.URI
 import java.net.http.HttpClient
 import java.net.http.HttpRequest
 import java.net.http.HttpResponse
-import kotlin.system.exitProcess
 
 class ConsumoApi {
     fun buscaJogo(id: String): InfoJogo? {
