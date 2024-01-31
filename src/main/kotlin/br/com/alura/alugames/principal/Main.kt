@@ -55,6 +55,15 @@ fun main() {
     println("Jogos buscados: ")
     println(gamer.jogosBuscados)
 
+    println("\nJogos ordenados por titulo: ")
+    gamer.jogosBuscados.sortBy {
+        it?.titulo
+    }
+
+    gamer.jogosBuscados.forEach {
+        println("Titulo: " + it?.titulo)
+    }
+
     println("Busca finalizada com sucesso!")
 
 }

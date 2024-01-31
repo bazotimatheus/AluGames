@@ -28,12 +28,12 @@ data class Gamer(var nome:String, var email:String) {
                     criarIdInterno()
                 }
 
-    init {
-        if (nome.isBlank()) {
-            throw IllegalArgumentException("Nome está em branco")
-        }
-        this.email = validarEmail()
-    }
+//    init {
+//        if (nome.isBlank()) {
+//            throw IllegalArgumentException("Nome está em branco")
+//        }
+//        this.email = validarEmail()
+//    }
 
     override fun toString(): String {
         return "Gamer:" +
