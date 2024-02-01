@@ -9,4 +9,8 @@ fun main() {
 
     println(listaGamer)
     println(jogoApi)
+
+    val listaJogo = consumo.buscaJogosJson()
+
+    println(listaJogo)
 }
