@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="164efe5f-ccd2-43e2-947f-f22da7ed3737" name="Changes" comment="added buscaGamers">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/alura/alugames/utilitario/GamerExtension.kt" afterDir="false" />
+    <list default="true" id="164efe5f-ccd2-43e2-947f-f22da7ed3737" name="Changes" comment="map list of Gamers">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/alura/alugames/servicos/ConsumoApi.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/alura/alugames/servicos/ConsumoApi.kt" afterDir="false" />
     </list>
@@ -261,7 +260,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706815333722</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="map list of Gamers">
+      <option name="closed" value="true" />
+      <created>1706816033360</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1706816033360</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -294,6 +301,7 @@
     <MESSAGE value="added changes to the list" />
     <MESSAGE value="calculate age of the gamer" />
     <MESSAGE value="added buscaGamers" />
-    <option name="LAST_COMMIT_MESSAGE" value="added buscaGamers" />
+    <MESSAGE value="map list of Gamers" />
+    <option name="LAST_COMMIT_MESSAGE" value="map list of Gamers" />
   </component>
 </project>
