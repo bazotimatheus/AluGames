@@ -15,10 +15,8 @@ data class Gamer(var nome:String, var email:String) {
         }
 
     private var idInterno:String? = null
-    var plano: PlanoAvulso = PlanoAvulso("BRONZE")
-
+    var plano: Plano = PlanoAvulso("BRONZE")
     val jogosBuscados = mutableListOf<Jogo?>()
-
     val jogosAlugados = mutableListOf<Aluguel>()
 
     constructor(nome: String,
@@ -68,6 +66,12 @@ data class Gamer(var nome:String, var email:String) {
         jogosAlugados.add(aluguel)
 
         return aluguel
+    }
+
+    fun jogosDoMes(mes: Int): List<Jogo> {
+        return jogosAlugados
+            .filter { aluguel -> aluguel.periodo.dataInicial.monthValue == mes }
+            .map { aluguel -> aluguel.jogo }
     }
 
     companion object {
