@@ -3,7 +3,7 @@ package br.com.alura.alugames.modelo
 import java.util.*
 import kotlin.random.Random
 
-data class Gamer(var nome:String, var email:String) {
+data class Gamer(var nome:String, var email:String): Recomendavel {
     var dataNascimento:String? = null
 
     var usuario:String? = null
@@ -18,6 +18,7 @@ data class Gamer(var nome:String, var email:String) {
     var plano: Plano = PlanoAvulso("BRONZE")
     val jogosBuscados = mutableListOf<Jogo?>()
     val jogosAlugados = mutableListOf<Aluguel>()
+    private val listaNotas = mutableListOf<Int>()
 
     constructor(nome: String,
                 email: String,
@@ -38,11 +39,12 @@ data class Gamer(var nome:String, var email:String) {
 
     override fun toString(): String {
         return "Gamer:" +
-                "Nome: " + nome + "\n" +
-                "email: " + email + "\n" +
-                "data de nascimento: " + dataNascimento + "\n" +
-                "usuario: " + usuario + "\n" +
-                "idInterno: " + idInterno + "\n"
+                "Nome: $nome \n" +
+                "email: $email \n" +
+                "data de nascimento: $dataNascimento \n" +
+                "usuario: $usuario \n" +
+                "idInterno: $idInterno \n" +
+                "Reputação: $media "
     }
 
     private fun criarIdInterno() {
@@ -95,6 +97,13 @@ data class Gamer(var nome:String, var email:String) {
             }
 
         }
+    }
+
+    override val media: Double
+        get() = listaNotas.average()
+
+    override fun recomendar(nota: Int) {
+        listaNotas.add(nota)
     }
 
 
