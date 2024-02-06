@@ -1,6 +1,10 @@
 package br.com.alura.alugames.modelo
 
-class PlanoAssinatura(tipo: String, val mensalidade: Double, val jogosIncluidos: Int, val percentualDescontoReputacao: Double): Plano(tipo) {
+class PlanoAssinatura(tipo: String,
+                      val mensalidade: Double,
+                      val jogosIncluidos: Int,
+                      val percentualDescontoReputacao: Double): Plano(tipo) {
+
     override fun obterValor(aluguel: Aluguel): Double {
         val totalJogosNoMes = aluguel.gamer.jogosDoMes(aluguel.periodo.dataInicial.monthValue).size
 
@@ -14,4 +18,5 @@ class PlanoAssinatura(tipo: String, val mensalidade: Double, val jogosIncluidos:
             valorOriginal
         }
     }
+
 }
