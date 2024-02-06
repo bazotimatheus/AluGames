@@ -15,6 +15,7 @@ data class Gamer(var nome:String, var email:String) {
         }
 
     private var idInterno:String? = null
+    var plano: PlanoAvulso = PlanoAvulso("BRONZE")
 
     val jogosBuscados = mutableListOf<Jogo?>()
 
