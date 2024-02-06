@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="164efe5f-ccd2-43e2-947f-f22da7ed3737" name="Changes" comment="create superclass Plano">
+    <list default="true" id="164efe5f-ccd2-43e2-947f-f22da7ed3737" name="Changes" comment="added jogosDoMes">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/alura/alugames/modelo/Recomendavel.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/alura/alugames/modelo/Aluguel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/alura/alugames/modelo/Aluguel.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/alura/alugames/modelo/Gamer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/alura/alugames/modelo/Gamer.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/alura/alugames/modelo/Plano.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/alura/alugames/modelo/Plano.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/alura/alugames/modelo/PlanoAssinatura.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/alura/alugames/modelo/PlanoAssinatura.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/alura/alugames/principal/TesteJson.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/alura/alugames/principal/TesteJson.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +21,7 @@
         <option value="Kotlin File" />
         <option value="Kotlin Data Class" />
         <option value="Kotlin Class" />
+        <option value="Kotlin Interface" />
       </list>
     </option>
   </component>
@@ -322,7 +321,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707225070513</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="added jogosDoMes">
+      <option name="closed" value="true" />
+      <created>1707244677980</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1707244677980</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -337,7 +344,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="first commit" />
     <MESSAGE value="set httpclient, resquest and response" />
     <MESSAGE value="added class jogo" />
     <MESSAGE value="override toString in Jogo" />
@@ -362,6 +368,7 @@
     <MESSAGE value="cria uma lista de jogos alugados" />
     <MESSAGE value="create PlanoAvulso.kt" />
     <MESSAGE value="create superclass Plano" />
-    <option name="LAST_COMMIT_MESSAGE" value="create superclass Plano" />
+    <MESSAGE value="added jogosDoMes" />
+    <option name="LAST_COMMIT_MESSAGE" value="added jogosDoMes" />
   </component>
 </project>

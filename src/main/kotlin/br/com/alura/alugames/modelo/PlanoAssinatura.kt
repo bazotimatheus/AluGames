@@ -5,7 +5,7 @@ class PlanoAssinatura(tipo: String, val mensalidade: Double, val jogosIncluidos:
         val totalJogosNoMes = aluguel.gamer.jogosDoMes(aluguel.periodo.dataInicial.monthValue).size
 
         return if (totalJogosNoMes <= jogosIncluidos) {
-            return 0.0
+            0.0
         } else {
             super.obterValor(aluguel)
         }
