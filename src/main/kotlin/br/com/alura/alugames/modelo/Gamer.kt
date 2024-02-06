@@ -19,6 +19,7 @@ data class Gamer(var nome:String, var email:String): Recomendavel {
     val jogosBuscados = mutableListOf<Jogo?>()
     val jogosAlugados = mutableListOf<Aluguel>()
     private val listaNotas = mutableListOf<Int>()
+    val jogosRecomendados = mutableListOf<Jogo>()
 
     constructor(nome: String,
                 email: String,
@@ -109,6 +110,11 @@ data class Gamer(var nome:String, var email:String): Recomendavel {
             println("Nota inválida. Digite um valor entre 1 e 10.")
         }
 
+    }
+
+    fun recomendarJogo(jogo: Jogo, nota: Int) {
+        jogo.recomendar(nota)
+        jogosRecomendados.add(jogo)
     }
 
 

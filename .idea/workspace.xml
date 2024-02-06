@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="164efe5f-ccd2-43e2-947f-f22da7ed3737" name="Changes" comment="added the interface Recomendavel to Jogo">
+    <list default="true" id="164efe5f-ccd2-43e2-947f-f22da7ed3737" name="Changes" comment="added check for valid nota in recomendar">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/alura/alugames/modelo/Gamer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/alura/alugames/modelo/Gamer.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/alura/alugames/principal/TesteJson.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/alura/alugames/principal/TesteJson.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -374,7 +376,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707251662860</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="added check for valid nota in recomendar">
+      <option name="closed" value="true" />
+      <created>1707252119247</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1707252119247</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -389,7 +399,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added scanner" />
     <MESSAGE value="dealing with exceptions" />
     <MESSAGE value="added runCatching" />
     <MESSAGE value="added packages" />
@@ -414,6 +423,7 @@
     <MESSAGE value="added discount for gamers with great reputation" />
     <MESSAGE value="added discount in the constructor of gamer" />
     <MESSAGE value="added the interface Recomendavel to Jogo" />
-    <option name="LAST_COMMIT_MESSAGE" value="added the interface Recomendavel to Jogo" />
+    <MESSAGE value="added check for valid nota in recomendar" />
+    <option name="LAST_COMMIT_MESSAGE" value="added check for valid nota in recomendar" />
   </component>
 </project>
