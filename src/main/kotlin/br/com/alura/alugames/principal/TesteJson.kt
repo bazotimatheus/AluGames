@@ -25,9 +25,9 @@ fun main() {
 //    println(gamerCaroline)
 //    println(jogoResidentVillage)
 
-    val periodo1 = Periodo(LocalDate.now(), LocalDate.now().plusDays(7))
-    val periodo2 = Periodo(LocalDate.now(), LocalDate.now().plusDays(3))
-    val periodo3 = Periodo(LocalDate.now(), LocalDate.now().plusDays(10))
+//    val periodo1 = Periodo(LocalDate.now(), LocalDate.now().plusDays(7))
+//    val periodo2 = Periodo(LocalDate.now(), LocalDate.now().plusDays(3))
+//    val periodo3 = Periodo(LocalDate.now(), LocalDate.now().plusDays(10))
 
 //    gamerCaroline.alugaJogo(jogoResidentVillage, periodo1)
 //    gamerCaroline.alugaJogo(jogoSpider, periodo2)
@@ -48,7 +48,7 @@ fun main() {
 //    println(gamerCamila)
 
 //    gamerCamila.alugaJogo(jogoResidentVillage, periodo1)
-////    println(gamerCamila.jogosAlugados)
+//    println(gamerCamila.jogosAlugados)
 //
 //    gamerCamila.recomendarJogo(jogoResidentVillage, 7)
 //    gamerCamila.recomendarJogo(jogoTheLastOfUs, 10)
@@ -62,7 +62,7 @@ fun main() {
 //    println(gamerCaroline.jogosRecomendados)
 
 //    val gamerCaroline = listaGamers.get(3)
-
+//
     val gamerCamila = listaGamers.get(5)
     val jogoResidentVillage = listaJogoJson.get(10)
     val jogoSpider = listaJogoJson.get(13)
@@ -82,13 +82,19 @@ fun main() {
     gamerCamila.recomendarJogo(jogoSkyrim, 8)
     gamerCamila.recomendarJogo(jogoSpider, 6)
 
+
+    gamerCamila.recomendar(7)
+    gamerCamila.recomendar(10)
+    gamerCamila.recomendar(8)
+    println(gamerCamila)
+
     val gson = GsonBuilder()
         .excludeFieldsWithoutExposeAnnotation()
         .create()
 
     val serializacao = gson.toJson(gamerCamila.jogosRecomendados)
 
-    val arquivo = File("jogosRecomendados.json")
+    val arquivo = File("jogosRecomendados-${gamerCamila.nome}.json")
 
     arquivo.writeText(serializacao)
     println(arquivo.absolutePath)

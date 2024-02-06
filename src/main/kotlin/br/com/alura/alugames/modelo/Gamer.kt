@@ -1,5 +1,6 @@
 package br.com.alura.alugames.modelo
 
+import br.com.alura.alugames.utilitario.formatoComDuasCasasDecimais
 import java.util.*
 import kotlin.random.Random
 
@@ -101,7 +102,7 @@ data class Gamer(var nome:String, var email:String): Recomendavel {
     }
 
     override val media: Double
-        get() = listaNotas.average()
+        get() = listaNotas.average().formatoComDuasCasasDecimais()
 
     override fun recomendar(nota: Int) {
         if (nota in 1..10) {
