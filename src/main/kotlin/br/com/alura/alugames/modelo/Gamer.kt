@@ -103,7 +103,12 @@ data class Gamer(var nome:String, var email:String): Recomendavel {
         get() = listaNotas.average()
 
     override fun recomendar(nota: Int) {
-        listaNotas.add(nota)
+        if (nota in 1..10) {
+            listaNotas.add(nota)
+        } else {
+            println("Nota inválida. Digite um valor entre 1 e 10.")
+        }
+
     }
 
 
