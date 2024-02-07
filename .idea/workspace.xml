@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="164efe5f-ccd2-43e2-947f-f22da7ed3737" name="Changes" comment="added hibernate">
+    <list default="true" id="164efe5f-ccd2-43e2-947f-f22da7ed3737" name="Changes" comment="added EntityManager">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/alura/alugames/dados/GamerEntity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/alura/alugames/dados/GamersDAO.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/alura/alugames/dados/JogosDAO.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/alura/alugames/dados/JogosDAO.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/alura/alugames/principal/TesteBanco.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/alura/alugames/principal/TesteBanco.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/alura/alugames/modelo/Gamer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/alura/alugames/modelo/Gamer.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,6 +80,7 @@
       <recent name="C:\Users\Matheus\IdeaProjects\AluGames\src\main\kotlin\br\com\alura\alugames\principal" />
     </key>
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="br.com.alura.alugames.dados" />
       <recent name="br.com.alura.alugames.modelo" />
     </key>
   </component>
@@ -447,7 +450,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707337184787</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="added EntityManager">
+      <option name="closed" value="true" />
+      <created>1707337708675</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1707337708675</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -462,7 +473,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added changes to the list" />
     <MESSAGE value="calculate age of the gamer" />
     <MESSAGE value="added buscaGamers" />
     <MESSAGE value="map list of Gamers" />
@@ -487,6 +497,7 @@
     <MESSAGE value="Added database" />
     <MESSAGE value="Added DAO to insert Jogos on the DB" />
     <MESSAGE value="added hibernate" />
-    <option name="LAST_COMMIT_MESSAGE" value="added hibernate" />
+    <MESSAGE value="added EntityManager" />
+    <option name="LAST_COMMIT_MESSAGE" value="added EntityManager" />
   </component>
 </project>

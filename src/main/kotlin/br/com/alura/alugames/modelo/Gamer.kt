@@ -18,6 +18,7 @@ data class Gamer(var nome:String, var email:String): Recomendavel {
     var id = 0
     private var idInterno:String? = null
     var plano: Plano = PlanoAvulso("BRONZE")
+
     val jogosBuscados = mutableListOf<Jogo?>()
     val jogosAlugados = mutableListOf<Aluguel>()
     private val listaNotas = mutableListOf<Int>()
@@ -25,8 +26,8 @@ data class Gamer(var nome:String, var email:String): Recomendavel {
 
     constructor(nome: String,
                 email: String,
-                dataNascimento: String,
-                usuario: String,
+                dataNascimento: String?,
+                usuario: String?,
                 id: Int = 0):
                 this(nome, email) {
                     this.dataNascimento = dataNascimento
