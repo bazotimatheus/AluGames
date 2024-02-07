@@ -7,11 +7,13 @@ data class Jogo(@Expose val titulo:String?,
                 @Expose val capa:String?):Recomendavel {
     var preco = BigDecimal("0.0")
     var descricao: String? = null
+    var id = 0
 
-    constructor(titulo: String, capa: String, preco: Double, descricao: String):
+    constructor(titulo: String, capa: String, preco: Double, descricao: String, id: Int = 0):
             this(titulo, capa) {
         this.preco = BigDecimal(preco)
         this.descricao = descricao
+        this.id = id
     }
 
     private val listaNotas = mutableListOf<Int>()
@@ -24,11 +26,12 @@ data class Jogo(@Expose val titulo:String?,
     }
 
     override fun toString(): String {
-        return "Meu Jogo:\n" +
+        return "\nMeu Jogo: \n" +
                 "Titulo: $titulo \n" +
                 "Capa: $capa \n" +
                 "Preço: $preco \n" +
-                "Descricao: $descricao \n"
+                "Descricao: $descricao \n" +
+                "Id: $id \n"
     }
 
 

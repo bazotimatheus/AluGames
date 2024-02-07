@@ -3,7 +3,7 @@ package br.com.alura.alugames.modelo
 import java.math.BigDecimal
 import java.math.RoundingMode
 
-class PlanoAvulso(tipo: String): Plano(tipo) {
+class PlanoAvulso(tipo: String, id: Int = 0): Plano(tipo, id) {
 
     override fun obterValor(aluguel: Aluguel): BigDecimal {
         var valorOriginal = super.obterValor(aluguel)
@@ -14,4 +14,9 @@ class PlanoAvulso(tipo: String): Plano(tipo) {
         return valorOriginal.setScale(2, RoundingMode.HALF_EVEN)
     }
 
+    override fun toString(): String {
+        return "\nPlano Avulso: \n" +
+                "Tipo: $tipo \n" +
+                "Id: $id \n"
+    }
 }
