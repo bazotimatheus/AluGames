@@ -8,6 +8,7 @@ data class Jogo(@Expose val titulo:String?,
     var preco = BigDecimal("0.0")
     var descricao: String? = null
     var id = 0
+    private val listaNotas = mutableListOf<Int>()
 
     constructor(titulo: String, capa: String, preco: Double, descricao: String, id: Int = 0):
             this(titulo, capa) {
@@ -16,7 +17,6 @@ data class Jogo(@Expose val titulo:String?,
         this.id = id
     }
 
-    private val listaNotas = mutableListOf<Int>()
 
     override val media: Double
         get() = listaNotas.average()
