@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="164efe5f-ccd2-43e2-947f-f22da7ed3737" name="Changes" comment="added Generics to Gamer and Jogos DAO">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/alura/alugames/dados/PlanoEntity.kt" afterDir="false" />
+    <list default="true" id="164efe5f-ccd2-43e2-947f-f22da7ed3737" name="Changes" comment="added PlanoEntity">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/alura/alugames/dados/PlanosDAO.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/alura/alugames/principal/TestePlanoBanco.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/alura/alugames/dados/PlanoEntity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/alura/alugames/dados/PlanoEntity.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +20,8 @@
       <list>
         <option value="Kotlin Data Class" />
         <option value="Kotlin Interface" />
-        <option value="Kotlin File" />
         <option value="Kotlin Class" />
+        <option value="Kotlin File" />
       </list>
     </option>
   </component>
@@ -55,22 +57,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Kotlin.MainKt.executor&quot;: &quot;Run&quot;,
-    &quot;Kotlin.TesteBancoKt.executor&quot;: &quot;Run&quot;,
-    &quot;Kotlin.TesteGamerKt.executor&quot;: &quot;Run&quot;,
-    &quot;Kotlin.TesteJsonKt.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Matheus/IdeaProjects/screenmatch&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Kotlin.MainKt.executor": "Run",
+    "Kotlin.TesteBancoKt.executor": "Run",
+    "Kotlin.TesteGamerKt.executor": "Run",
+    "Kotlin.TesteJsonKt.executor": "Run",
+    "Kotlin.TestePlanoBancoKt.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Matheus/IdeaProjects/screenmatch",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Matheus\IdeaProjects\AluGames\src\main\kotlin\br\com\alura\alugames\servicos" />
@@ -471,7 +474,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707408946737</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="added PlanoEntity">
+      <option name="closed" value="true" />
+      <created>1707415251485</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1707415251485</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -486,7 +497,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="map list of Gamers" />
     <MESSAGE value="refactor ConsumoApi.kt" />
     <MESSAGE value="created buscaJogo" />
     <MESSAGE value="calcula Aluguel" />
@@ -511,6 +521,7 @@
     <MESSAGE value="added EntityManager" />
     <MESSAGE value="added EntityGamer" />
     <MESSAGE value="added Generics to Gamer and Jogos DAO" />
-    <option name="LAST_COMMIT_MESSAGE" value="added Generics to Gamer and Jogos DAO" />
+    <MESSAGE value="added PlanoEntity" />
+    <option name="LAST_COMMIT_MESSAGE" value="added PlanoEntity" />
   </component>
 </project>
