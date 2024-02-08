@@ -33,4 +33,4 @@ fun PlanoEntity.toModel(): Plano {
         } else {
             PlanoAvulso(this.tipo, this.id)
         }
-} 
+}
