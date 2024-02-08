@@ -5,13 +5,13 @@ import java.math.RoundingMode
 
 class PlanoAvulso(tipo: String, id: Int = 0): Plano(tipo, id) {
 
-    override fun obterValor(aluguel: Aluguel): BigDecimal {
+    override fun obterValor(aluguel: Aluguel): Double {
         var valorOriginal = super.obterValor(aluguel)
 
         if(aluguel.gamer.media > 8) {
-            valorOriginal -= valorOriginal.multiply(BigDecimal("0.1"))
+            valorOriginal -= valorOriginal * 0.1 // .multiply(BigDecimal("0.1"))
         }
-        return valorOriginal.setScale(2, RoundingMode.HALF_EVEN)
+        return BigDecimal(valorOriginal).setScale(2, RoundingMode.HALF_EVEN).toDouble()
     }
 
     override fun toString(): String {

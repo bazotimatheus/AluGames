@@ -1,18 +1,17 @@
 package br.com.alura.alugames.modelo
 
 import com.google.gson.annotations.Expose
-import java.math.BigDecimal
 
 data class Jogo(@Expose val titulo:String?,
                 @Expose val capa:String?):Recomendavel {
-    var preco = BigDecimal("0.0")
+    var preco = 0.0
     var descricao: String? = null
     var id = 0
     private val listaNotas = mutableListOf<Int>()
 
     constructor(titulo: String, capa: String, preco: Double, descricao: String, id: Int = 0):
             this(titulo, capa) {
-        this.preco = BigDecimal(preco)
+        this.preco = preco
         this.descricao = descricao
         this.id = id
     }
