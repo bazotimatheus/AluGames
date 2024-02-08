@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="164efe5f-ccd2-43e2-947f-f22da7ed3737" name="Changes" comment="added PlanoEntity">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/alura/alugames/dados/PlanosDAO.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/alura/alugames/principal/TestePlanoBanco.kt" afterDir="false" />
+    <list default="true" id="164efe5f-ccd2-43e2-947f-f22da7ed3737" name="Changes" comment="added PlanosDAO and test">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/alura/alugames/principal/TesteGamerBanco.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/alura/alugames/utilitario/PlanoExtension.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/alura/alugames/dados/PlanoEntity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/alura/alugames/dados/PlanoEntity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/alura/alugames/dados/GamerEntity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/alura/alugames/dados/GamerEntity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/alura/alugames/dados/GamersDAO.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/alura/alugames/dados/GamersDAO.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/br/com/alura/alugames/dados/PlanosDAO.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/br/com/alura/alugames/dados/PlanosDAO.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +63,7 @@
   "keyToString": {
     "Kotlin.MainKt.executor": "Run",
     "Kotlin.TesteBancoKt.executor": "Run",
+    "Kotlin.TesteGamerBancoKt.executor": "Run",
     "Kotlin.TesteGamerKt.executor": "Run",
     "Kotlin.TesteJsonKt.executor": "Run",
     "Kotlin.TestePlanoBancoKt.executor": "Run",
@@ -482,7 +485,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707415251485</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="added PlanosDAO and test">
+      <option name="closed" value="true" />
+      <created>1707416833951</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1707416833951</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -497,7 +508,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="refactor ConsumoApi.kt" />
     <MESSAGE value="created buscaJogo" />
     <MESSAGE value="calcula Aluguel" />
     <MESSAGE value="cria uma lista de jogos alugados" />
@@ -522,6 +532,7 @@
     <MESSAGE value="added EntityGamer" />
     <MESSAGE value="added Generics to Gamer and Jogos DAO" />
     <MESSAGE value="added PlanoEntity" />
-    <option name="LAST_COMMIT_MESSAGE" value="added PlanoEntity" />
+    <MESSAGE value="added PlanosDAO and test" />
+    <option name="LAST_COMMIT_MESSAGE" value="added PlanosDAO and test" />
   </component>
 </project>
