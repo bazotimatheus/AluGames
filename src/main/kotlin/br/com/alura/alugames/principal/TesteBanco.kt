@@ -14,7 +14,7 @@ fun main() {
     val jogoDAO = JogosDAO(manager)
 
 
-//    jogoDAO.adicionar(jogo2)
+    jogoDAO.adicionar(jogo2)
 
     val jogoRecuperado = jogoDAO.recuperarPeloId(6)
     println(jogoRecuperado)
